@@ -22,3 +22,8 @@ require.config({
         }
     }
 });
+require(['jquery', 'underscore'],
+        function($, _) {
+            require(['init']);
+        }
+);
