@@ -7,7 +7,14 @@ and open the template in the editor.
     <head>
         <title>Backbone Js</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script data-main="js/main" src="js/libs/require-2.0.6.min.js"></script>
+        <script type="text/javascript">
+            var require = {
+                baseUrl: "js",
+                waitSeconds: 15,
+                //urlArgs: "bust=" + new Date().getTime() // Development Env (Break Points Not Working)
+                        //urlArgs: "bust=" + {{BuildNumber}}  // Production Env {{BuildNumber}} ==>> Pass Build Number
+            };</script>
+        <script data-main="main" src="js/libs/require-2.0.6.min.js"></script>
     </head>
     <body>
         <div>Test Backbone Js</div>
