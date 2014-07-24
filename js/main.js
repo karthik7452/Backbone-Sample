@@ -5,8 +5,8 @@
 require.config({
     paths: {
         jquery: "libs/jquery-1.8.0.min",
-        underscore: "underscore-1.3.3.min",
-        backbone: "backbone-0.9.2.min",
+        underscore: "libs/underscore-1.3.3.min",
+        backbone: "libs/backbone-0.9.2.min",
         appConfig: "appConfig"
     },
     shim: {
