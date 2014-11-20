@@ -1,14 +1,13 @@
 /* 
  * Application Configurations here
  */
-
 define(['jquery', 'backbone'], function() {
     var appConfig = {};
     appConfig.Porotocol = 'http://';
-    appConfig.Host = '127.0.0.1';
-    appConfig.ApiBasePath = '/user/api/';
+    appConfig.Host = 'localhost';
+    appConfig.ApiBasePath = '/backbone_practice/apis/';
     appConfig.RootApiUrl = appConfig.Porotocol + appConfig.Host + appConfig.ApiBasePath;
-    appConfig.UserListApiUrl = appConfig.RootApiUrl + 'userList.json';
+    appConfig.UserListApiUrl = appConfig.RootApiUrl + 'userService.php';
     return appConfig;
 });
 

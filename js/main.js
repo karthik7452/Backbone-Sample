@@ -7,6 +7,7 @@ require.config({
         jquery: "libs/jquery-1.8.0.min",
         underscore: "libs/underscore-1.3.3.min",
         backbone: "libs/backbone-0.9.2.min",
+        text:"libs/text",
         appConfig: "appConfig"
     },
     shim: {

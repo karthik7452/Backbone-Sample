@@ -1,0 +1,14 @@
+<table border="1px">
+    <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>Department</th>
+    </tr>
+    <%_.each(userData,function(user,index){%>
+            <tr>
+                <td><%=index+1%></td>
+                <td><%=user.name%></td>
+                <td><%=user.department%></td>
+            </tr>
+    <% });%>
+</table>

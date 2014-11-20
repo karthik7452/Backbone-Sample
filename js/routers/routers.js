@@ -2,15 +2,16 @@
  * Application Routers 
  */
 
-define(['jquery', 'backbone', 'appConfig'], function($, Backbone, AppConfig) {
+define(['jquery', 'backbone', 'appConfig','views/userView'], function($, Backbone, AppConfig,userView) {
 
     var ApplicationRouters = Backbone.Router.extend({
         routes: {
-            '': 'index',
+            '': 'userDetails',
             'main': 'main'
         },
-        index: function() {
-            console.log('index view load');
+        userDetails: function() {
+            var user = new userView();
+            console.log('user view load');
         },
         main: function() {
             console.log('main view load');
